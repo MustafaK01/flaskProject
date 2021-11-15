@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block body %}
+{% from "includes/_formhelpers.html" import render_field %}
+
+<h2>Muayeneleriniz</h2>
+<hr>
+<div class="row">
+    <br>
+    <div class="col-md-5">
+        <h5 style="border-bottom:1px solid black; font-style: italic;">İsim Soyisim</h5>
+        {% for i in yName%}
+            {{i}} <br style="border-bottom:2px solid black;" > 
+        {% endfor %}
+    </div>
+    <div class="col-md-5">
+        <h5 style="border-bottom:1px solid black; font-style: italic;">Başvuru Nedeni</h5>
+        {% for i in xHastalik%}
+            {{i}} <br style="border-bottom:2px solid black;" > 
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

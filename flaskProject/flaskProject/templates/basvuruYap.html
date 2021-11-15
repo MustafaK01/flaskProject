@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% from "includes/_formhelpers.html" import render_field %}
+{% block body %}
+<h2>Muayene Saatleriniz</h2>
+<h6>Hoşgeldin {{session["username"]}}</h6>
+<hr>
+<form method="post">
+    {{render_field(form.hastalik)}}
+    <button type="submit" class="btn" style="background-color: #b3d9f5;">Başvur</button>
+</form>
+{% endblock body %}

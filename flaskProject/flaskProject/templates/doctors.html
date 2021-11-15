@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block body %}
+<h2>Doktorlarımız</h2>
+<hr>
+<div class="jumbotron">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sed debitis error? Repellat, aspernatur explicabo porro temporibus nihil amet neque quidem quos! Alias libero unde quibusdam natus soluta tempora quo. <br> 
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi non excepturi officia illum ex est eligendi quis ipsum voluptatem earum! Ratione eligendi aperiam minima vero mollitia minus illum. Aspernatur, pariatur!
+</div>
+<br>
+    <ul>
+    {% for i in list1 %}
+        <li>Doktorun Id Numarası : {{i.id}} - Doktorun Ünvanı : {{i.title}} </li>
+    {% endfor %}
+    </ul>
+    <br>
+<hr>
+
+{% endblock %}

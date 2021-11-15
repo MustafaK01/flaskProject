@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block body %}
+{% from "includes/_formhelpers.html" import render_field %}
+<h3>Hasta Kayıt Ekranı</h3>
+<hr>
+<form method="post">
+    {{render_field(form.name)}}
+    {{render_field(form.phoneNumber)}}
+    {{render_field(form.email)}}
+    {{render_field(form.IdentityNumber)}}
+    {{render_field(form.password)}}
+    {{render_field(form.confirm)}}
+    <button type="submit" class="btn" style="background-color: #b3d9f5;">Kayıt Ol</button>
+</form>
+{% endblock %}
